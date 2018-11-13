@@ -9,8 +9,9 @@
     <!--Stylesheets-->
     <link rel='stylesheet' href='/assets/css/bootstrap.min.css'>
     <link rel='stylesheet' href='/assets/css/font-awesome.min.css'>
-    <link rel='stylesheet' href='/assets/css/styles.css'>
-    <link href='https://fonts.googleapis.com/css?family=Lato:400,700,900' rel='stylesheet'>
+    <link rel='stylesheet' href='/assets/css/landing.css'>
+    <link rel='stylesheet' href='/assets/css/base.css'>
+    <link href='https://fonts.googleapis.com/css?family=Noto+Sans' rel='stylesheet'>
 
     <!--Favicon-->
     <link rel='shortcut icon' href='/assets/images/favicon.ico'>
@@ -21,47 +22,27 @@
 </head> 
     
     
-<body data-spy='scroll' data-target='#navbar'>
-<!--
-     <nav class='navbar navbar-expand-md fixed-top' id='navbar'>
-
-        <button class='navbar-toggler' type='button' data-toggle='collapse' data-target='#navbar-toggler' aria-controls='navbar-toggler' aria-expanded='false' aria-label='Toggle navigation'>
-            <span class='fa fa-bars'></span>
-            <p>Menu</p>
-        </button>
-
-        <div class='collapse navbar-collapse justify-content-end' id='navbar-toggler'>
-            <ul class='navbar-nav'>
-                <li class='nav-item'>
-                    <a class='nav-link' href='#skills'>Skills</a>
-                </li>
-                <li class='nav-item'>
-                    <a class='nav-link' href='#work'>Work</a>
-                </li>
-                <li class='nav-item'>
-                    <a class='nav-link' href='#contact'>Contact</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
--->
-    <div class='menubar collapse' id='menubar'>
-        <div class='menubar__pullout' id='menubar-pullout'>
-            <i class='fa fa-times menubar__close'></i>
-            <div class='menubar__link' id='work'>Home</div>
-            <div class='menubar__link' id='work'>Work</div>
-            <div class='menubar__link' id='contact'>Contact</div>
-        </div>
+<body>
+    
+    <div class='menubar__list'>
+        <div class='menubar__list-link' href=''>Home</div>
+        <div class='menubar__list-link' href='work'>Work</div>
+        <div class='menubar__list-link' href='contact'>Contact</div>
     </div>
-
     <div class='menubar__toggler'>
         <span class='fa fa-bars'></span>
         <div class='menubar__toggler-label'>Menu</div>
     </div>
-        
-        
-<!--    </div>-->
-    
+    <div class='menubar' id='menubar'>
+        <div class='menubar__pullout' id='menubar-pullout'>
+            <i class='fa fa-times menubar__close'></i>
+            <div class='menubar__link' href=''>Home</div>
+            <div class='menubar__link' href='work'>Work</div>
+            <div class='menubar__link' href='contact'>Contact</div>
+        </div>
+    </div>
+
+   
     <div class='landing' id='landing'>
         <div class='landing__accent-block--dgrey'></div>
         <div class='landing__image'></div>
@@ -102,6 +83,57 @@
 -->
     <div class='work' id='work'>
         <div class='section-title'>Work</div>
+        <div class='work__tiles'>
+        
+            <a href='/work.html?id=tracer' class='work__tile work__tile-large'>
+                <div class='work__tile-inner' id='tracer'>
+                    <div class='work__tile-link'>Tracer</div>
+                </div>
+            </a>
+            <a href='/work.html?id=jira' class='work__tile work__tile-small'>
+                <div class='work__tile-inner' id='jira'>
+                    <div class='work__tile-link'>Tracer Project Management</div>
+                </div>
+            </a>
+            <a href='/work.html?id=aaum' class='work__tile work__tile-small'>
+                <div class='work__tile-inner' id='aaum'>
+                    <div class='work__tile-link'>Alumni Association of NYC</div>
+                </div>
+            </a>
+            
+            <a href='/work.html?id=analytics' class='work__tile work__tile-small'>
+                <div class='work__tile-inner' id='analytics'>
+                    <div class='work__tile-link'>Tracer Marketing</div>
+                </div>
+            </a>
+             
+            <a href='/work.html?id=hk' class='work__tile work__tile-small'>
+                <div class='work__tile-inner' id='hk'>
+                    <div class='work__tile-link'>Cigna Hong Kong</div>
+                </div>
+            </a>
+             <a href='/work.html?id=dxs' class='work__tile work__tile-large'>
+                <div class='work__tile-inner' id='dxs'>
+                    <div class='work__tile-link'>Cigna Digital Expereince Standards</div>
+                </div>
+            </a>    
+           <a href='/work.html?id=ifp' class='work__tile work__tile-small'>
+                <div class='work__tile-inner' id='ifp'>
+                    <div class='work__tile-link'>Cigna Individual &amp; Family Plans</div>
+                </div>
+            </a>
+            <a href='/work.html?id=cchs' class='work__tile work__tile-small'>
+                 <div class='work__tile-inner' id='cchs'>
+                    <div class='work__tile-link'>Crawford County Historical Society</div>
+                </div>
+            </a>
+             <a href='/work.html?id=medicare' class='work__tile work__tile-small'>
+                 <div class='work__tile-inner' id='medicare'>
+                    <div class='work__tile-link'>Cigna Medicare</div>
+                </div>
+            </a>     
+        </div>
+        
         <hr class='hr--right'>
     </div>
     <div class='contact' id='contact'>
@@ -110,14 +142,14 @@
             
             <div class='form-group'>
                 <input type='text' class='form-control' name='name' id='name' placeholder='Name'>
-                    </div>
+            </div>
             <div class='form-group'>
                 <input type='email' class='form-control' name='email' id='email' placeholder='Email'>
-                    </div>
+            </div>
             <div class='form-group'>
                 <textarea name='message' class='form-control' rows='5' id='message' placeholder='Message'></textarea>
             </div>
-            <div class='g-recaptcha' data-sitekey='6Le3yiUUAAAAAMymjX9M1V7BBSeksoTNxlOKaJX9' data-callback='recaptchaCallback'></div>
+            <div class='g-recaptcha contact__recaptcha' data-sitekey='6Le3yiUUAAAAAMymjX9M1V7BBSeksoTNxlOKaJX9' data-callback='recaptchaCallback'></div>
             <input type='submit' name='submit' id='submit' class='contact__form-submit disabled' value='Send' disabled>
         </form>
         <div class='contact__accent-block-purple'>
@@ -125,18 +157,18 @@
                 <i class='fa fa-map-marker-alt contact__link-icon'></i>
                 <div class='contact__link-label'>New York, NY</div>
             </div>
-             <div class='contact__link-row'>
+             <a href='mailto:hello@courtney-ring.com' class='contact__link-row'>
                 <i class='fa fa-envelope contact__link-icon'></i>
                 <div class='contact__link-label'>Email</div>
-            </div>
-            <div class='contact__link-row'>
+            </a>
+            <a href='http://linkedin.com/in/courtneyring710' target='_blank' class='contact__link-row'>
                 <i class='fab fa-linkedin-in contact__link-icon'></i>
                 <div class='contact__link-label'>LinkedIn</div>
-            </div>
-            <div class='contact__link-row'>
+            </a>
+            <a href='http://github.com/courtneyring' target='_blank' class='contact__link-row'>
                 <i class='fab fa-github contact__link-icon'></i>
                 <div class='contact__link-label'>Github</div>
-            </div>
+            </a>
            
             <div class='contact__link-row'>
                 <i class='fa fa-download contact__link-icon'></i>
