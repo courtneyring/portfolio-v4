@@ -2,14 +2,17 @@
     "aaum": {
         "heroImg":     "/assets/images/work/aaum-hero.jpg",
         "mainHeader":  "University of Michigan Alumni Association Website",
-        "mainBody":    "• Serve as the webmaster for the NYC Chapter of the Alumni Association of the University of Michigan<br>• Working to update the current website to improve the user interface and make the site mobile friendly",
+        "mainBody":    "The University of Michigan Alumni Association has a chapter based in New York City to bring together alumni for various events and activities. I serve as the webmaster for the chapter, managing the website and making updates when needed.. My current focus is to redesign each page for consistency, usability, and mobile friendliness.",
         "infoCompany": "Alumni Association of New York City",
         "infoRole":    ["Web Development", "Design"],
         "infoTech":    ["HTML", "CSS", "Javascript", "Higher Logic Content Manager", "Adobe InDesign"],
         "desktopImg":  "/assets/images/aaum-desktop.png",
         "mobileImg":   "/assets/images/aaum-mobile.png",
         "previous":    {"label":"Tracer", "id": "tracer"},
-        "next":        {"label":"Tracer Marketing", "id": "analytics"}
+        "next":        {"label":"Tracer Marketing", "id": "analytics"},
+        "links": [
+            {"label": "Visit the Alumni Association website", "url":"https://community.alumni.umich.edu/nyc/home"}
+        ]
     },
     "analytics": {
         "heroImg":     "/assets/images/analytics-hero.png",
@@ -33,7 +36,10 @@
         "desktopImg":  "/assets/images/cchs-desktop.png",
         "mobileImg":   "/assets/images/cchs-mobile.png",
         "previous":    {"label":"Tracer Marketing", "id": "analytics"},
-        "next":        {"label":"Digital Standards", "id": "dxs"}
+        "next":        {"label":"Digital Standards", "id": "dxs"},
+        "links": [
+            {"label": "See the CCHS website", "url":"http://crawfordcountyhistoricalsociety.com/"}
+        ]
     },
     "dxs": {
         "heroImg":     "/assets/images/work/aaum/hero.jpg",
@@ -48,7 +54,7 @@
     "hk": {
         "heroImg":     "/assets/images/work/aaum/hero.jpg",
         "mainHeader":  "Cigna Hong Kong Website",
-        "mainBody":    "• GCMS took on the initiative to move Cigna Hong Kong onto HP Teamsite Content Manager<br>• Required significant collaboration between the US and Hong Kong Teams, including Developers, UI/UX, QA, content translators, Project Managers, and Business Managers<br>• The site was done in both English and Chinese ",
+        "mainBody":    "In 2016, Cigna Hong Kong agreed to move their website onto Cigna’s  global content management platform - HP Teamsite. For this effort, GCMS was tasked with revamping the site, and building it into HP Teamsite so the Hong Kong team could continue to manage the site with minimal technical skill. The project required significant collaboration between UI/UX, developers, content translators, QA, project managers, and business managers across both countries. My role as a developer was to translate mock ups into teamsite components, and build the pages using these components. The site was completed in less than a month in both English and Chinese.",
         "infoCompany": "Cigna",
         "infoRole":    ["Content Management", "Web Development", "Scripting"],
         "infoTech":    ["HP Teamsite", "CSS", "Javascript"],

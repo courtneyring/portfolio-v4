@@ -140,14 +140,13 @@ xl 1200+
 .landing {
     display: flex;
     height: 100%;
-    height: calc(100vh + 415px);
-/*    position: relative;*/
+    height: 160vh;
     width: 100%;
 }
 
 .landing__accent-block--dgrey {
     background-color: #1c1c1c;
-    height: 140%;
+    height: calc(160vh - 110px);
     left: 40px;
     position: absolute;
     top: 110px;
@@ -162,6 +161,7 @@ xl 1200+
     border-left: 15px solid #3e2269;
     height: 95%;
     left: 8%;
+    min-width: 600px;
     position: absolute;
     top: 5%;
     width: 43%;
@@ -172,6 +172,7 @@ xl 1200+
     background-color: #3e2269;
     height: 300px;
     left: 43%;
+    min-width: 400px;
     padding: 30px;
     position: absolute;
     top: 40%;
@@ -208,11 +209,14 @@ xl 1200+
 .landing__accent-block--mgrey {
     background-color: #676465;
     color: white;
-    height: 630px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 85vh;
     left: 25%;
-    padding: 400px 70px 70px;
+    padding: 45px;
     position: absolute;
-    top: 63%;
+    top: 50vh;
     width: 65%;
 }
 
@@ -241,6 +245,7 @@ xl 1200+
         border-left: none;
         height: 50%;
         left: 0;
+        min-width: unset;
         top: 0;
         width: 100%;
     }
@@ -248,6 +253,7 @@ xl 1200+
     .landing__accent-block--purple {
         height: initial;
         left: 0;
+        min-width: unset;
         padding: 15px;
         top: 27%;
         width: 85%;
@@ -266,6 +272,7 @@ xl 1200+
     }
     
     .landing__accent-block--mgrey {
+        justify-content: flex-start;
         left: 0;
         padding: 20px;
         position: relative;

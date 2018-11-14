@@ -1,4 +1,8 @@
 
+$(document).ready(function() {
+    console.log('done')
+})
+
 //---------Navbar Collapse-------//
 function checkScroll(){
 
