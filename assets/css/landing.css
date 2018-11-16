@@ -37,6 +37,7 @@ xl 1200+
     
 }
 
+
 .menubar.expand .menubar__pullout {
     width: 25%;
 }
@@ -121,10 +122,14 @@ xl 1200+
     cursor: pointer;
 }
 
-@media(max-width:768px) {
+@media(max-width: 767px) {
     .menubar__list {
         display: none;
-    }
+    }   
+}
+
+
+@media(max-width:575px) {
     
     .menubar__toggler.ghost {
         display: flex;
@@ -134,6 +139,10 @@ xl 1200+
         width: 100%;
     }
 }
+
+
+
+
 
 /*Landing*/
 
@@ -146,7 +155,7 @@ xl 1200+
 
 .landing__accent-block--dgrey {
     background-color: #1c1c1c;
-    height: calc(160vh - 110px);
+    height: calc(153vh - 110px);
     left: 40px;
     position: absolute;
     top: 110px;
@@ -228,7 +237,84 @@ xl 1200+
     font-size: 18px;  
 }
 
-@media(max-width:768px){
+@media(max-width: 990px) {
+    .landing__image {
+        min-width: inherit;
+        width: 68%;
+    }
+    
+    .landing__accent-block--dgrey {
+        left: 20px;
+        width: calc(100% - 40px);
+    }
+    
+    .landing__accent-block--purple {
+        top: 52%;
+    }
+    
+    .landing__accent-block--mgrey {
+        top: 42vh;
+        height: 101vh;
+    }
+}
+
+
+@media(max-width: 767px) {
+    .landing {
+        height: 155vh;
+    }
+    
+    .landing__accent-block--dgrey {
+        height: calc(165vh - 110px);
+        left: 0px;
+        width: 100%;
+    }
+    
+    .landing__image {
+        min-width: inherit;
+        left: 4%;
+        width: 70%;
+    }
+    
+    .landing__accent-block--purple { 
+        height: initial;
+        min-width: inherit;
+        padding: 20px;
+        top: 50%;
+        width: 51%;
+    }
+    
+    .landing__title {
+        font-size: 30px;
+    }
+    
+    .landing__hr {
+        margin: 15px 0px;
+    }
+    
+    .landing__tagline {
+        font-size: 18px;
+    }
+    
+    .landing__accent-block--mgrey {
+        height: initial;
+        left: 19%;
+        padding: 65vh 30px 30px 30px;
+        top: 41vh;
+        width: 70%;
+    }
+    
+    .landing__subsection-title {
+        font-size: 30px;
+    }
+    
+    .landing__subsection-body {
+        font-size: 18px;
+    }
+    
+}
+
+@media(max-width:575px){
     
     .landing {
         height: 200vh;
@@ -445,11 +531,18 @@ xl 1200+
 #medicare { background-image: url(/assets/images/medicare-tile.jpg)}
 #dxs { background-image: url(/assets/images/dxs-tile.jpg)}
 
-
-@media(max-width: 768px) {
+@media(max-width: 990px) {
     .work__tiles {
         padding: 50px 30px;
     }
+    
+    .work__tile-large, .work__tile-small {
+        width: 50%;
+    }
+}
+
+
+@media(max-width: 768px) {
     
     .work__tile {
         height: 300px;
@@ -553,32 +646,53 @@ xl 1200+
     line-height: 1;
 }
 
-@media(max-width: 768px) { 
+@media(max-width: 767px) { 
     .contact {
-        height: initial;
+        height: inherit;
     }
+    
     .contact__form {
         background-color: transparent;
         left: 0;
-        padding: 10px;
+        padding: 30px; 
         position: relative;
+        top: inherit;
         width: 100%;
+    }
+    
+    .contact__accent-block-purple {
+        height: inherit;
+        padding: 20px;
+        position: relative;
+        right: 0;
+        top: inherit;
+        width: 100%;
+    }
+    
+    .contact__form-submit.disabled {
+        background-color:  rgba(103,100,101, 0.4);
+        color: white;
+    }
+}
+
+@media(max-width: 575px) { 
+    .contact {
+        height: initial;
+    }
+    
+    .contact__form {
+        padding: 10px;    
     }
     
     .contact__recaptcha {
         width: 20px;
     }
     
-    .contact__accent-block-purple {
-        padding: 20px;
-        position: relative;
-        right: 0;
-        width: 100%;
-    }
-    
     .contact__link-row {
         margin-bottom: 20px;
     }
+    
+    
 }
 
 

@@ -6,11 +6,13 @@ $(document).ready(function() {
 //---------Navbar Collapse-------//
 function checkScroll(){
 
-    if($(window).scrollTop() > 100){
-        $('.menubar__toggler').removeClass('ghost')
+    if($(window).width() > 767) {
+        if($(window).scrollTop() > 100){
+            $('.menubar__toggler').removeClass('ghost')
 
-    } else{
-        $('.menubar__toggler').addClass('ghost')
+        } else{
+            $('.menubar__toggler').addClass('ghost')
+        }
     }
 }
 
@@ -82,7 +84,11 @@ function openMenu() {
 //    $('.menubar').removeClass('ghost')
      
     $('.menubar__toggler').addClass('hidden')
-    $('.menubar').css('display', 'flex').addClass('expand')
+    $('.menubar').addClass('expand')
+    setTimeout(function() {
+        $('.menubar').removeClass('ghost')
+    }, 20)
+//    
 //    $('.menubar').animate(
 //        {opacity: '1'}, 
 //        {duration: 400, queue: false}
@@ -96,7 +102,11 @@ function openMenu() {
 
 
 function closeMenu() {
-    $('.menubar').removeClass('expand').css('display', 'none')
+    $('.menubar').removeClass('expand')
+    setTimeout(function() {
+       $('.menubar').addClass('ghost')
+    }, 20)
+//    $('.menubar').css('display', 'none')
     $('.menubar__toggler').removeClass('hidden')
 //    $('.menubar').animate(
 //        {opacity: '0'}, 
