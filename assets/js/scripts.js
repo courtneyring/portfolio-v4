@@ -6,7 +6,7 @@ $(document).ready(function() {
 //---------Navbar Collapse-------//
 function checkScroll(){
 
-    if($(window).width() > 767) {
+    if($(window).width() > 990) {
         if($(window).scrollTop() > 100){
             $('.menubar__toggler').removeClass('ghost')
 
