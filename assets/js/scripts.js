@@ -1,7 +1,18 @@
 
 $(window).on('load', function() {
     $('.loading-screen').hide()
+    checkAnimations();
 })
+
+
+//--------Animations-------//
+
+
+function checkAnimations() {
+    $('.landing').removeClass('pre-scroll')
+
+}
+
 
 //---------Navbar Collapse-------//
 function checkScroll(){
@@ -19,6 +30,7 @@ function checkScroll(){
 $(function(){
     $(window).on("scroll load resize", function(){
         checkScroll();
+        checkAnimations();
     })
 })
 

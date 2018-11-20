@@ -38,7 +38,7 @@
         "previous":    {"label":"Tracer Marketing", "id": "analytics"},
         "next":        {"label":"Digital Standards", "id": "dxs"},
         "links": [
-            {"label": "See the CCHS website", "url":"http://crawfordcountyhistoricalsociety.com/"}
+            {"label": "Visit the CCHS website", "url":"http://crawfordcountyhistoricalsociety.com/"}
         ]
     },
     "dxs": {
@@ -61,7 +61,10 @@
         "desktopImg":  "/assets/images/hk-desktop.png",
         "mobileImg":   "/assets/images/hk-mobile.png",
         "previous":    {"label":"Digital Standards", "id": "dxs"},
-        "next":        {"label":"Cigna IFP", "id": "ifp"}
+        "next":        {"label":"Cigna IFP", "id": "ifp"},
+        "links": [
+            {"label": "Visit the Cigna Hong Kong website", "url":"https://cigna.com.hk/"}
+        ]
     },
      "ifp": {
         "heroImg":     "/assets/images/work/aaum/hero.jpg",
@@ -71,8 +74,11 @@
         "infoRole":    ["Content Management", "Web Development", "Scripting"],
         "infoTech":    ["HP Teamsite", "Python", "HTML", "CSS", "Javascript"],
         "desktopImg":  "/assets/images/ifp-desktop.png",
-        "previous":    {"label":"Cigan Hong Kong", "id": "hk"},
-        "next":        {"label":"Cigna Medicare", "id": "medicare"}
+        "previous":    {"label":"Cigna Hong Kong", "id": "hk"},
+        "next":        {"label":"Cigna Medicare", "id": "medicare"},
+        "links": [
+            {"label": "Visit Cigna Individual &amp; Family Plans", "url":"https://www.cigna.com/individuals-families/"}
+        ]
     },
     "medicare": {
         "heroImg":     "/assets/images/work/aaum/hero.jpg",
@@ -84,7 +90,10 @@
         "desktopImg":  "/assets/images/medicare-desktop.png",
         "mobileImg":   "/assets/images/medicare-mobile.png",
         "previous":    {"label":"Cigan IFP", "id": "ifp"},
-        "next":        {"label":"Tracer", "id": "tracer"}
+        "next":        {"label":"Tracer", "id": "tracer"},
+        "links": [
+            {"label": "Visit the Cigna-HealthSpring Medicare website", "url":"https://www.cigna.com/medicare/"}
+        ]
     },
     "tracer": {
         "heroImg":     "/assets/images/work/tracer-hero.jpg",

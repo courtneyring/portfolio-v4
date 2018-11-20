@@ -33,7 +33,7 @@ Purple - #3e2269 rgb(62,34,105)
 .hero {
     background-position: center;
     background-size: cover;
-    height: 350px;
+    height: 325px;
     position: relative;
 }
 
@@ -60,11 +60,12 @@ Purple - #3e2269 rgb(62,34,105)
 .overview {
     display: flex;
     justify-content: space-between;
-    margin: 0px 80px;
+    margin: 80px;
 }
 
 .overview__main {
-    padding: 50px;
+/*    padding: 50px;*/
+    padding-right: 100px;
     position: relative;
     width: 75%;
 }
@@ -91,6 +92,7 @@ Purple - #3e2269 rgb(62,34,105)
 }
 
 .overview__main-link {
+    color: #3e2269;
     font-size: 14px;
     font-weight: 600;
     margin-top: 15px;
@@ -105,7 +107,6 @@ Purple - #3e2269 rgb(62,34,105)
 }
 
 .overview__info {
-    padding: 50px;
     width: 25%;
 }
 
@@ -129,15 +130,25 @@ Purple - #3e2269 rgb(62,34,105)
     padding-left: 0px;
 }
 
-@media(max-width: 768px) {
+@media(max-width: 990px) {
+    .overview {
+        margin: 50px;
+    }
+    
+    .overview__main {
+        padding-right: 70px;
+    }
+}
+
+@media(max-width: 767px) {
     .overview {
         height: inherit;
         flex-direction: column;
-        margin: 0px;
         position: relative;
     }
     
     .overview__main {
+        padding: 0px 0px 60px 0px;
         width: inherit;
     }
     
@@ -170,33 +181,51 @@ Purple - #3e2269 rgb(62,34,105)
 .section2 {
     background-color: #e6e4e4;
     display: flex; 
-    justify-content: space-between;
-    height: 500px;
-    padding: 100px 200px;
+    justify-content: space-around;
+    min-height: 500px;
+    padding: 100px;
     top: 1000px;
 }
 
-.section2__desktop-image {
-    height: 500px;
-    width: 60%;
-}
-
 .section2__mobile-image {
-    height: 500px;
+    padding-right: 10px;
 }
 
-@media(max-width: 768px) {
+.section2__desktop-image {
+    padding-left: 10px;
+}
+
+.section2__desktop-image, 
+.section2__mobile-image {
+    height: 450px;
+    width: auto;
+}
+
+@media(max-width: 990px) {
+    .section2 {
+        min-height: initial;
+    }
+    
+    .section2__desktop-image, 
+    .section2__mobile-image {
+        height: 350px;
+    }
+}
+
+@media(max-width: 767px) {
     .section2 {
         align-items: center;
         flex-direction: column;
         height: inherit;
-        padding: 20px 0px;
+        padding: 50px 0px;
         position: relative;
         top: 0;
     }
     
     .section2__desktop-image {
-        width: 90%;
+        height: auto;
+        padding: 0px;
+        width: 80%;
     }
     
     .section2__mobile-image {
@@ -251,8 +280,8 @@ Purple - #3e2269 rgb(62,34,105)
     background-color: #1c1c1c;
     color: white;
     display: flex;
-    height: 200px;
-    padding: 30px 40px;
+    min-height: 120px;
+    padding: 50px 40px;
 }
 
 

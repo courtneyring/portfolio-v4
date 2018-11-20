@@ -1,3 +1,7 @@
+$(window).on('load', function() {
+    $('.loading-screen').hide()
+})
+
 $(document).ready(function() {
     
     $.getJSON( "/assets/json/data.json", function( data ) {
