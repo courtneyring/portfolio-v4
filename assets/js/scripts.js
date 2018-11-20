@@ -10,7 +10,6 @@ $(window).on('load', function() {
 
 function checkAnimations() {
     $('.landing').removeClass('pre-scroll')
-
 }
 
 
