@@ -14,6 +14,31 @@ xl 1200+
 */
 
 
+.loading-screen {
+    align-items: center;
+    background-color: #1c1c1c;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    position: absolute;
+    width: 100vw;
+    z-index: 10;
+}
+
+.loading-screen__loader {
+    border: 8px solid #e6e4e4; /* Light grey */
+    border-top: 8px solid #3e2269; /* Blue */
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
 
 /*Navbar*/
 

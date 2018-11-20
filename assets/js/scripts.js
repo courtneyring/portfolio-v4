@@ -1,6 +1,6 @@
 
-$(document).ready(function() {
-    console.log('done')
+$(window).on('load', function() {
+    $('.loading-screen').hide()
 })
 
 //---------Navbar Collapse-------//
