@@ -2,6 +2,25 @@ $(window).on('load', function() {
     $('.loading-screen').hide()
 })
 
+$(function(){
+    $(window).on('resize', function(){
+        setBackground()
+    })
+})
+
+
+function setBackground() {
+    
+    mediaQuery = window.matchMedia( "(max-width: 767px)" )
+    if(mediaQuery.matches){
+        $('.hero').css('background-image', 'url(' + window.templateData.heroImgMobile + ')')
+    }
+    else {
+         $('.hero').css('background-image', 'url(' + window.templateData.heroImgDesktop + ')')
+    }
+}
+
+
 $(document).ready(function() {
     
     $.getJSON( "/assets/json/data.json", function( data ) {
@@ -20,6 +39,7 @@ $(document).ready(function() {
             return 
          }
         
+         window.templateData = templateData
          
          $('#mainHeader').html(templateData.mainHeader)
          $('#mainBody').html(templateData.mainBody)
@@ -30,12 +50,14 @@ $(document).ready(function() {
          templateData.infoTech.forEach(function(tech){
              $('#infoTech').append('<li>' + tech + '</li>')  
          })
-         $('.hero').css('background-image', 'url(' + templateData.heroImg + ')')
+         
          
          $('.footer__previous').attr('href', '/work.html?id=' + templateData.previous.id)
          $('.footer__previous-project').html(templateData.previous.label)
          $('.footer__next').attr('href', '/work.html?id=' + templateData.next.id)
          $('.footer__next-project').html(templateData.next.label)
+         
+         setBackground()
          
          if(templateData.links){
              $("<div class='overview__main-links'></div>").insertAfter('.overview__main-body')

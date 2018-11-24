@@ -497,15 +497,15 @@ xl 1200+
 }
 
 
-#tracer { background-image: url(/assets/images/tracer-tile.jpg)}
-#aaum { background-image: url(/assets/images/portfolio-thumbnail-aaum.png)}
-#jira { background-image: url(/assets/images/jira-tile.jpg)}
-#ifp { background-image: url(/assets/images/ifp-tile.jpg)}
-#cchs { background-image: url(/assets/images/portfolio-thumbnail-cchs.png)}
-#hk { background-image: url(/assets/images/hk-tile.png)}
-#analytics { background-image: url(/assets/images/analytics-tile.jpg)}
-#medicare { background-image: url(/assets/images/medicare-tile.jpg)}
-#dxs { background-image: url(/assets/images/dxs-tile.jpg)}
+#tracer { background-image: url(/assets/images/work/tracer/tracer-tile.jpg)}
+#aaum { background-image: url(/assets/images/work/aaum/portfolio-thumbnail-aaum.png)}
+#jira { background-image: url(/assets/images/work/jira/jira-tile.jpg)}
+#ifp { background-image: url(/assets/images/work/ifp/ifp-tile.jpg)}
+#cchs { background-image: url(/assets/images/work/cchs/portfolio-thumbnail-cchs.png)}
+#hk { background-image: url(/assets/images/work/hk/hk-tile.png)}
+#analytics { background-image: url(/assets/images/work/analytics/analytics-tile.jpg)}
+#medicare { background-image: url(/assets/images/work/medicare/medicare-tile.jpg)}
+#dxs { background-image: url(/assets/images/work/dxs/dxs-tile.jpg)}
 
 @media(max-width: 990px) {
     .work__tiles {
@@ -555,17 +555,25 @@ xl 1200+
 }
 
 .contact__form-submit {
-    background-color: #3e2269;
+    background-color: rgba(62,34,105, 0.8);
+    border-radius: 20px;
     color: white;
-    border: .1rem solid transparent;
+    cursor: pointer;
+    border: 1px solid white;
     border-radius: 3px;
     padding: 5px 15px;
     margin-top: 30px
 }
 
+.contact__form-submit:hover {
+    background-color: rgba(62,34,105, 0.6);
+}
+
 .contact__form-submit.disabled {
     background-color: #e6e4e4;
     color: #1c1c1c;
+    cursor: default;
+    pointer-events: none;
 }
 
 .form-group {

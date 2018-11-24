@@ -138,3 +138,9 @@ function closeMenu() {
 //    )
 }
 
+
+/*----------ReCaptcha----------*/
+function recaptchaCallback() {
+    $('.submit').removeClass('disabled');
+    $('.submit').removeAttr('disabled');
+};

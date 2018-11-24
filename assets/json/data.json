@@ -1,13 +1,14 @@
 {
     "aaum": {
-        "heroImg":     "/assets/images/work/aaum-hero.jpg",
+        "heroImgDesktop": "/assets/images/work/aaum/aaum-hero.jpg",
+        "heroImgMobile":  "/assets/images/work/aaum/portfolio-thumbnail-aaum.png",
         "mainHeader":  "University of Michigan Alumni Association Website",
         "mainBody":    "The University of Michigan Alumni Association has a chapter based in New York City to bring together alumni for various events and activities. I serve as the webmaster for the chapter, managing the website and making updates when needed.. My current focus is to redesign each page for consistency, usability, and mobile friendliness.",
         "infoCompany": "Alumni Association of New York City",
         "infoRole":    ["Web Development", "Design"],
         "infoTech":    ["HTML", "CSS", "Javascript", "Higher Logic Content Manager", "Adobe InDesign"],
-        "desktopImg":  "/assets/images/aaum-desktop.png",
-        "mobileImg":   "/assets/images/aaum-mobile.png",
+        "desktopImg":  "/assets/images/work/aaum/aaum-desktop.png",
+        "mobileImg":   "/assets/images/work/aaum/aaum-mobile.png",
         "previous":    {"label":"Tracer", "id": "tracer"},
         "next":        {"label":"Tracer Marketing", "id": "analytics"},
         "links": [
@@ -15,26 +16,28 @@
         ]
     },
     "analytics": {
-        "heroImg":     "/assets/images/analytics-hero.png",
+        "heroImgDesktop": "/assets/images/work/default-hero.png",
+        "heroImgMobile": "/assets/images/work/default-hero-mobile.png",
         "mainHeader":  "Tracer Marketing Website",
         "mainBody":    "• As part of the move to market to external clients, a public marketing site was made to highlight the features of the application<br>• Responsible for the analytics on the site, I used Google Analytics and Included custom event firing to get a better idea of user interaction. We continue to monitor the site using the Google Analytics platform",
         "infoCompany": "VaynerMedia",
         "infoRole":    ["Analytics"],
         "infoTech":    ["Google Analytics"],
-        "desktopImg":  "/assets/images/analytics-desktop.png",
-        "mobileImg":   "/assets/images/analytics-mobile.png",
+        "desktopImg":  "/assets/images/work/analytics/analytics-desktop.png",
+        "mobileImg":   "/assets/images/work/analytics/analytics-mobile.png",
         "previous":    {"label":"Alumni Association", "id": "aaum"},
         "next":        {"label":"Crawford County", "id": "cchs"}
     },
     "cchs": {
-        "heroImg":     "/assets/images/work/cchs-hero.jpg",
+        "heroImgDesktop":     "/assets/images/work/cchs/cchs-hero.jpg",
+        "heroImgMobile": "/assets/images/work/cchs/portfolio-thumbnail-cchs.png",
         "mainHeader":  "Crawford County Historical Museum Website",
         "mainBody":    "• Volunteer work done for the Crawford County Historical Society<br>• Done in effort to increase museum traffic and raise money for the Historical Society<br>• A single page site developed with AngularJS, Google tools were used to measure and improve performance",
         "infoCompany": "Crawford County Historical Society",
         "infoRole":    ["Web Development", "Design", "Analytics"],
         "infoTech":    ["AngularJS", "CSS", "Google Analytics", "Google Business"],
-        "desktopImg":  "/assets/images/cchs-desktop.png",
-        "mobileImg":   "/assets/images/cchs-mobile.png",
+        "desktopImg":  "/assets/images/work/cchs/cchs-desktop.png",
+        "mobileImg":   "/assets/images/work/cchs/cchs-mobile.png",
         "previous":    {"label":"Tracer Marketing", "id": "analytics"},
         "next":        {"label":"Digital Standards", "id": "dxs"},
         "links": [
@@ -42,7 +45,8 @@
         ]
     },
     "dxs": {
-        "heroImg":     "/assets/images/work/aaum/hero.jpg",
+         "heroImgDesktop": "/assets/images/work/default-hero.png",
+        "heroImgMobile": "/assets/images/work/default-hero-mobile.png",
         "mainHeader":  "Digital Experience Standards",
         "mainBody":    "• A project for marketing to supply standards for all digital teams in order to make Cigna's online presence more consistent<br>• Contributed to the design and development of the project by working between the marketing department and Cigna Content Management Services",
         "infoCompany": "Cigna",
@@ -52,14 +56,15 @@
         "next":        {"label":"Cigna Hong Kong", "id": "hk"}
     },
     "hk": {
-        "heroImg":     "/assets/images/work/aaum/hero.jpg",
+        "heroImgDesktop": "/assets/images/work/default-hero.png",
+        "heroImgMobile": "/assets/images/work/default-hero-mobile.png",
         "mainHeader":  "Cigna Hong Kong Website",
         "mainBody":    "In 2016, Cigna Hong Kong agreed to move their website onto Cigna’s  global content management platform - HP Teamsite. For this effort, GCMS was tasked with revamping the site, and building it into HP Teamsite so the Hong Kong team could continue to manage the site with minimal technical skill. The project required significant collaboration between UI/UX, developers, content translators, QA, project managers, and business managers across both countries. My role as a developer was to translate mock ups into teamsite components, and build the pages using these components. The site was completed in less than a month in both English and Chinese.",
         "infoCompany": "Cigna",
         "infoRole":    ["Content Management", "Web Development", "Scripting"],
         "infoTech":    ["HP Teamsite", "CSS", "Javascript"],
-        "desktopImg":  "/assets/images/hk-desktop.png",
-        "mobileImg":   "/assets/images/hk-mobile.png",
+        "desktopImg":  "/assets/images/work/hk/hk-desktop.png",
+        "mobileImg":   "/assets/images/work/hk/hk-mobile.png",
         "previous":    {"label":"Digital Standards", "id": "dxs"},
         "next":        {"label":"Cigna IFP", "id": "ifp"},
         "links": [
@@ -67,13 +72,14 @@
         ]
     },
      "ifp": {
-        "heroImg":     "/assets/images/work/aaum/hero.jpg",
+        "heroImgDesktop": "/assets/images/work/default-hero.png",
+        "heroImgMobile": "/assets/images/work/default-hero-mobile.png",
         "mainHeader":  "Individual & Family Plans",
         "mainBody":    "• Led the development effort of the annual release of Cigna Individual and Family Plans for Open Enrollment<br>• Moved the plan finder application from Java to AngularJS<br>• Automated data processing  to format the plan details for the plan finder application",
         "infoCompany": "Cigna",
         "infoRole":    ["Content Management", "Web Development", "Scripting"],
         "infoTech":    ["HP Teamsite", "Python", "HTML", "CSS", "Javascript"],
-        "desktopImg":  "/assets/images/ifp-desktop.png",
+        "desktopImg":  "/assets/images/work/ifp/ifp-desktop.png",
         "previous":    {"label":"Cigna Hong Kong", "id": "hk"},
         "next":        {"label":"Cigna Medicare", "id": "medicare"},
         "links": [
@@ -81,14 +87,15 @@
         ]
     },
     "medicare": {
-        "heroImg":     "/assets/images/work/aaum/hero.jpg",
+        "heroImgDesktop": "/assets/images/work/medicare/medicare-hero-desktop.png",
+        "heroImgMobile": "/assets/images/work/medicare/medicare-hero-mobile.png",
         "mainHeader":  "Cigna Medicare Marketing Site",
         "mainBody":    "• Participated in the annual release of Cigna HealthSpring-Medicare website<br>• Used python to automate data processing from various spreadsheets to one JSON file used by the plan finder application<br>• Content updates and defect corrections leading up to the release",
         "infoCompany": "Cigna HealthSpring-Medicare",
         "infoRole":    ["Content Management", "Scripting"],
         "infoTech":    ["HP Teamsite", "Python"],
-        "desktopImg":  "/assets/images/medicare-desktop.png",
-        "mobileImg":   "/assets/images/medicare-mobile.png",
+        "desktopImg":  "/assets/images/work/medicare/medicare-desktop.png",
+        "mobileImg":   "/assets/images/work/medicare/medicare-mobile.png",
         "previous":    {"label":"Cigan IFP", "id": "ifp"},
         "next":        {"label":"Tracer", "id": "tracer"},
         "links": [
@@ -96,7 +103,8 @@
         ]
     },
     "tracer": {
-        "heroImg":     "/assets/images/work/tracer-hero.jpg",
+        "heroImgDesktop": "/assets/images/work/tracer/tracer-hero.jpg",
+        "heroImgMobile":  "/assets/images/work/tracer/tracer-tile.jpg",
         "mainHeader":  "Tracer",
         "mainBody":    "Tracer is a marketing data and reporting platform used to aggregate advertising spending across social platforms. The application is not only used to generate reports and track spending, but can also be used for budget allocation, external data, ad verification, and custom formulas. As a front end developer on the team, my primary role is to use mocks, technical requirements, and business requirements to code the user interface. Using Ember.js as our framework, I pull data from the database using models and custom Ajax calls to the backend. The data is then bound to the frontend templates using handlebars for templating and sass for styling. Since I started on the team, we have moved from being an internal application to offering services to external clients in a range of industries. Our first client was on boarded in October 2018 and the team continues to move toward acquiring new clients. ",
         "links": [
