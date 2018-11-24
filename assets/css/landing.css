@@ -15,8 +15,6 @@ xl 1200+
 
 
 
-
-
 /*Navbar*/
 
 .menubar {
@@ -519,6 +517,19 @@ xl 1200+
     .work__tile-large, .work__tile-small {
         width: 50%;
     }
+    
+    .work__tile-link {
+        display: none;
+    }
+    
+    .work__tile:hover .work__tile-inner::before,
+    .work__tile:focus .work__tile-inner::before,
+    .work__tile:hover .work__tile-link,
+    .work__tile:focus .work__tile-link
+    {
+        display: block;
+    }
+
 }
 
 
