@@ -1,5 +1,6 @@
 $(window).on('load', function() {
     $('.loading-screen').hide()
+   
 })
 
 $(function(){

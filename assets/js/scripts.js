@@ -72,13 +72,13 @@ function scrollToSection(e) {
     e.stopPropagation();
 
     var hash = $(e.target).attr('href')
-
-
     
     offset = offsets[hash]
+   
 
     if(hash.length){
-        var scrollLocation = offset+$('menubar__toggler').height();
+        var scrollLocation = offset+$('.menubar__toggler').height();
+        console.log(scrollLocation)
     }
     else{
        var scrollLocation = 0;
