@@ -278,10 +278,13 @@ Purple - #3e2269 rgb(62,34,105)
 /*Footer*/
 .footer {
     background-color: #1c1c1c;
+    bottom: 0px;
     color: white;
     display: flex;
     min-height: 120px;
     padding: 50px 40px;
+/*    position: fixed;*/
+    width: 100%;
 }
 
 

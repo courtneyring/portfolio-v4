@@ -548,21 +548,40 @@ xl 1200+
 /*Contact*/
 
 .contact {
-    background-color: #e6e4e4;
+/*    background-color: #e6e4e4;*/
+    background-image: url('/assets/images/contact-background.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    padding-top: 90px;
     position: relative;
-    height: 100vh;
+/*    height: 100vh;*/
 }
 
 .contact__form {
-    background-color: #676465;
+/*    background-color: #676465;*/
     display: flex;
     flex-direction: column;
-    left: 10%;
+/*    left: 10%;*/
     padding: 50px 100px;
-    position: absolute;
-    top: 15%;
-    width: 60%;
-    z-index: 2;
+/*    position: absolute;*/
+/*    top: 15%;*/
+/*    width: 60%;*/
+/*    z-index: 2;*/
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 
 .contact__form-submit {
@@ -621,7 +640,7 @@ xl 1200+
     height: 60%;
     justify-content: space-around;
     padding: 30px 30px 100px 30px;
-    position: absolute;
+/*    position: absolute;*/
     right: 16%;
     top: 30%;
     width: 18%;
