@@ -167,14 +167,16 @@ xl 1200+
     display: flex;
     min-height: 100%;
     min-height: 160vh;
-    padding: 85px 3% 3% 3%;
+    padding: 85px 0% 3% 0%;
     width: 100%;
     
    
 }
 
 .landing__accent-block--dgrey {
-    background-color: #1c1c1c;
+/*    background-color: #1c1c1c;*/
+    background-image: url('/assets/images/landing-background.svg');
+    background-size: 100% 100%;
     width: 100%
         
 }
@@ -555,6 +557,7 @@ xl 1200+
     background-size: 100% 100%;
     padding-top: 90px;
     position: relative;
+    
 /*    height: 100vh;*/
 }
 
@@ -564,6 +567,9 @@ xl 1200+
     flex-direction: column;
 /*    left: 10%;*/
     padding: 50px 100px;
+    margin: 0 auto; 
+    
+    width: 60%;
 /*    position: absolute;*/
 /*    top: 15%;*/
 /*    width: 60%;*/
@@ -586,12 +592,14 @@ xl 1200+
 
 .contact__form-submit {
     background-color: rgba(62,34,105, 0.8);
-    border-radius: 20px;
+    border-radius: 5px;
     color: white;
     cursor: pointer;
-    border: 1px solid white;
-    border-radius: 3px;
-    padding: 5px 15px;
+    font-size: 16px;
+    height: 30px;
+/*    border: 1px solid white;*/
+/*    border-radius: 3px;*/
+/*    padding: 5px 15px;*/
     margin-top: 30px
 }
 
