@@ -16,7 +16,8 @@ function checkAnimations() {
 //---------Navbar Collapse-------//
 function checkScroll(){
 
-    if($(window).width() > 990) {
+    if($(window).width() > 1199) {
+        
         if($(window).scrollTop() > 100){
             $('.menubar__toggler').removeClass('ghost')
 
@@ -30,6 +31,10 @@ $(function(){
     $(window).on("scroll load resize", function(){
         checkScroll();
         checkAnimations();
+    
+        if($(window).width() > 1199) {window.menubarWidth = '25%'}
+        else if ($(window).width() > 767) {window.menubarWidth = '50%'}
+        else {window.menubarWidth = '100%'}
     })
 })
 
@@ -77,7 +82,8 @@ function scrollToSection(e) {
    
 
     if(hash.length){
-        var scrollLocation = offset+$('.menubar__toggler').height();
+        var scrollLocation = offset;
+//        var scrollLocation = offset+$('.menubar__toggler').height();
         console.log(scrollLocation)
     }
     else{
@@ -92,52 +98,45 @@ function scrollToSection(e) {
 }
 
 function openMenu() {
-//    $('.menubar').removeClass('ghost')
-     
-    $('.menubar__toggler').addClass('hidden')
-    $('.menubar').addClass('expand')
-    setTimeout(function() {
-        $('.menubar').removeClass('ghost')
-    }, 20)
-//    
-//    $('.menubar').animate(
-//        {opacity: '1'}, 
-//        {duration: 400, queue: false}
-//    )
-//    
-//    $('.menubar__pullout').animate(
-//        {width: '25%'},
-//        {duration: 400, queue: false}
-//    )
+    
+    $('.menubar__toggler').animate({
+        opacity: 0
+    }, 400)
+    
+    $('.menubar').css('display', 'flex')
+  
+    $('.menubar').animate(
+        {opacity: '1'}, 
+        {duration: 400, queue: false}
+    )
+
+    $('.menubar__pullout').animate(
+        {width: window.menubarWidth},
+        {duration: 400, queue: false}
+    )
 }
 
 
 function closeMenu() {
-    $('.menubar').removeClass('expand')
-    setTimeout(function() {
-       $('.menubar').addClass('ghost')
-    }, 20)
-//    $('.menubar').css('display', 'none')
-    $('.menubar__toggler').removeClass('hidden')
-//    $('.menubar').animate(
-//        {opacity: '0'}, 
-//        {duration: 400, queue: false}
-//    )
-//
-//    $('.menubar__pullout').animate(
-//        {width: '0%'},
-//        {duration: 400, 
-//        queue: false, 
-//        complete: function() {
-//                $('.menubar').addClass('ghost')
-//                if($(window).scrollTop() > 100){
-//                    $('.menubar__toggler').removeClass('ghost')
-//                }
-//            }
-//        }
-//    )
-}
+    $('.menubar__toggler').animate({
+        opacity: 1
+    }, 400)
 
+    $('.menubar').animate(
+        {opacity: '0'}, 
+        {duration: 400, 
+         queue: false,
+         complete: function() {
+               $('.menubar').css('display', 'none')
+            }
+        }
+    ) 
+
+    $('.menubar__pullout').animate(
+        {width: '0%'},
+        {duration: 400, queue: false}
+    )
+}
 
 /*----------ReCaptcha----------*/
 function recaptchaCallback() {
