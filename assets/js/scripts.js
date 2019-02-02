@@ -5,11 +5,32 @@ $(window).on('load', function() {
 })
 
 
+$(function(){
+    
+    $(window).on("scroll load resize", function(){
+        checkScroll();
+        checkAnimations();
+        setViewportHeight();
+        setOffsets();
+    
+        if($(window).width() > 1199) {window.menubarWidth = '25%'}
+        else if ($(window).width() > 767) {window.menubarWidth = '50%'}
+        else {window.menubarWidth = '100%'}
+    })
+})
+
 //--------Animations-------//
 
 
 function checkAnimations() {
     $('.landing').removeClass('pre-scroll')
+}
+
+//--------Animations-------//
+
+function setViewportHeight() {
+    vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
 }
 
 
@@ -27,26 +48,15 @@ function checkScroll(){
     }
 }
 
-$(function(){
-    $(window).on("scroll load resize", function(){
-        checkScroll();
-        checkAnimations();
-    
-        if($(window).width() > 1199) {window.menubarWidth = '25%'}
-        else if ($(window).width() > 767) {window.menubarWidth = '50%'}
-        else {window.menubarWidth = '100%'}
-    })
-})
-
 
 //---------Menubar-------//
 
-$(function(){
+function setOffsets(){
     offsets = {
         'work': $('#work').offset().top,
         'contact': $('#contact').offset().top
     }
-})
+}
 
 $('.menubar__toggler').on('click', function(e) {
     openMenu();

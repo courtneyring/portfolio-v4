@@ -26,31 +26,13 @@ macbook - 1440px
     background-color: rgba(28,28,28, 0.8);
     display: none;
     height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
     opacity: 0;
     position: fixed;
     top: 0;
     width: 100vw;
     z-index: 7;
-/*
-
-    -webkit-transition: all .2s;
-    -moz-transition: all .2s;
-    -o-transition: all .2s;
-    transition: all .2s;
-*/
 }
-
-.menubar.expand {
-/*    opacity: 1; */
-    
-}
-
-
-/*
-.menubar.expand .menubar__pullout {
-    width: 25%;
-}
-*/
 
 .menubar__toggler {
     align-items: center;
@@ -60,19 +42,11 @@ macbook - 1440px
     flex-direction: column;
     font-size: 25px;
     justify-content: center;
-/*    opacity: 0;*/
     padding: 15px;
     position: fixed;
     right: 0;
     top: 20px;
     z-index: 8;
-    
-/*
-     -webkit-transition: all .5s;
-    -moz-transition: all .5s;
-    -o-transition: all .5s;
-    transition: all .5s;
-*/
 }
 
 .menubar__toggler-label {
@@ -84,22 +58,14 @@ macbook - 1440px
     background-color: #3e2269;
     color: white;
     display: flex;
-/*    display: none;*/
     flex-direction: column;
     font-size: 30px;
     height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
     justify-content: center;
     margin-left: auto;
     padding-left: 40px;
     width: 0%;
-
-/*
-     -webkit-transition: all .5s;
-    -moz-transition: all .5s;
-    -o-transition: all .5s;
-    transition: all .5s;
-*/
-    
 }
 
 .menubar__link {
@@ -144,19 +110,7 @@ macbook - 1440px
     }   
 }
 
-@media(max-width: 767px) {
-   
-}
-
-
 @media(max-width:575px) {
-    
-/*
-    .menubar__toggler.ghost {
-        display: flex;
-    }
-*/
-    
     .menubar.expand .menubar__pullout {
         width: 100%;
     }
@@ -176,7 +130,8 @@ macbook - 1440px
 
 .landing.pre-scroll > .landing__accent-block--mgrey {
     top: 52vh;
-    opacity: 0
+    top: calc(var(--vh, 1vh) * 52);
+    opacity: 0;
 }
 
 
@@ -186,6 +141,7 @@ macbook - 1440px
     display: flex;
     min-height: 100%; /*fallback*/
     min-height: 145vh; /*Switch to 100% + pixels*/
+    height: calc(var(--vh, 1vh) * 145);
     position: relative;
     width: 100%;
 }
@@ -206,6 +162,7 @@ macbook - 1440px
     background-size: cover;
     border-left: 15px solid #3e2269;
     height: calc(100vh - 40px); /*This should match top*/
+    height: calc(var(--vh, 1vh) * 100 - 40px);
     left: 8%; /*This should match right on block--mgrey*/
     opacity: 1;
     position: absolute;
@@ -221,6 +178,7 @@ macbook - 1440px
     padding: 30px;
     position: absolute;
     top: 35vh;
+    top: calc(var(--vh, 1vh) * 35);
     width: 35%;
     z-index: 3;
     
@@ -261,8 +219,10 @@ macbook - 1440px
     right: 8%; /*this should match left on image*/
     opacity: 1;
     padding: 55vh 35px 35px 35px; /*padding top needs to be 100 - top + 5*/
+    padding-top: calc(var(--vh, 1vh) * 55);
     position: absolute;
     top: 50vh;
+    top: calc(var(--vh, 1vh) * 50);
     width: 65%;
 }
 
@@ -287,6 +247,7 @@ macbook - 1440px
     
     .landing__accent-block--purple {
         top: 44vh;
+        top: calc(var(--vh, 1vh) * 44);
         width: 40%;
     }
     
@@ -301,6 +262,7 @@ macbook - 1440px
     
     .landing {
         height: 150vh;
+        height: calc(var(--vh, 1vh) * 150);
     }
     
     .landing__accent-block--mgrey {
@@ -317,7 +279,9 @@ macbook - 1440px
     
     .landing__accent-block--mgrey {
         padding-top: 45vh;
+        padding-top: calc(var(--vh, 1vh) * 45);
         top: 60vh;
+        top: calc(var(--vh, 1vh) * 60);
     }
 }
 
@@ -327,11 +291,13 @@ macbook - 1440px
     
     .landing {
         height: 170vh;
+        height: calc(var(--vh, 1vh) * 170);
     }
     
     .landing__image {
         left: 3%;
         height: 90vh;
+        height: calc(var(--vh, 1vh) * 90);
         top: 40px;
         width: 82%;
     }
@@ -343,13 +309,16 @@ macbook - 1440px
     .landing__accent-block--purple {
         left: 0;
         top: 56vh;
+        top: calc(var(--vh, 1vh) * 56);
         width: 70%;
     }
 
     
     .landing__accent-block--mgrey {
         padding-top: 69vh;
+        padding-top: calc(var(--vh, 1vh) * 69);
         top: 36vh;
+        top: calc(var(--vh, 1vh) * 36);
         right: 0;
         width: 80%;
     }
@@ -360,11 +329,13 @@ macbook - 1440px
     
     .landing {
         height: 210vh;
+        height: calc(var(--vh, 1vh) * 210);
     }
     
     .landing__accent-block--purple {
         padding: 20px;
         top: 66vh;
+        top: calc(var(--vh, 1vh) * 66);
         width: 90%;
     }
     
@@ -387,6 +358,7 @@ macbook - 1440px
     .landing__image {
         border-left-width: 0px;
         height: 86vh;
+        height: calc(var(--vh, 1vh) * 86);
         left: 5%;
         top: 37px;
         width: 80%;
@@ -394,6 +366,7 @@ macbook - 1440px
     
     .landing__accent-block--mgrey {
         padding: 69vh 20px 20px 20px;
+        padding-top: calc(var(--vh, 1vh) * 69);
         width: 75%;
     }
     
@@ -410,10 +383,9 @@ macbook - 1440px
 
 
 
-Work
+/*Work*/
 
 .work {
-/*    background-color: ;*/
     position: relative;
 }
 
@@ -557,30 +529,20 @@ Work
 /*Contact*/
 
 .contact {
-/*    background-color: #e6e4e4;*/
     background-image: url('/assets/images/contact-background.svg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100% 100%;
     padding-top: 90px;
     position: relative;
-    
-/*    height: 100vh;*/
 }
 
 .contact__form {
-/*    background-color: #676465;*/
     display: flex;
     flex-direction: column;
-/*    left: 10%;*/
     padding: 50px 100px;
     margin: 0 auto; 
-    
     width: 60%;
-/*    position: absolute;*/
-/*    top: 15%;*/
-/*    width: 60%;*/
-/*    z-index: 2;*/
 }
 
 .form-control {
@@ -634,18 +596,6 @@ Work
     text-transform: uppercase;
     width: 50px;
 }
-/*
-
-.contact__accent-block-dgrey {
-    background-color: #1c1c1c;
-    height: 110%;
-    left: 15%;
-    position: absolute;
-    top: -10%;
-    width: 70%;
-    z-index: 1;
-}
-*/
 
 .contact__accent-block-purple {
     align-items: flex-start;
@@ -655,19 +605,15 @@ Work
     height: 60%;
     justify-content: space-around;
     padding: 30px 30px 100px 30px;
-/*    position: absolute;*/
     right: 16%;
     top: 30%;
     width: 18%;
-    z-index: 3;
-    
+    z-index: 3;   
 }
 
 .contact__link-row {
     display: flex;
-    
 }
-
 
 .contact__link-icon {
     color: white;
@@ -765,12 +711,8 @@ a.contact__link-row:hover > .contact__link-label{
     
     .contact__link-row {
         margin-bottom: 20px;
-    }
-    
-    
+    }    
 }
-
-
 
 
 /*Footer*/
