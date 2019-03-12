@@ -35,6 +35,10 @@ function setViewportHeight() {
 
 
 //---------Navbar Collapse-------//
+var animateTile = function(elem){
+    
+}
+
 function checkScroll(){
 
     if($(window).width() > 1199) {
@@ -45,6 +49,13 @@ function checkScroll(){
         } else{
             $('.menubar__toggler').addClass('ghost')
         }
+    }
+    
+    if($(window).scrollTop() + $(window).height() > $('.work__tiles').offset().top){
+        tiles = $('.work__tile')
+        tiles.each(function(index){
+            setTimeout(function(){$(tiles[index]).addClass('post-scroll')}, index*200)
+        })
     }
 }
 

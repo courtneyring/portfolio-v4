@@ -395,6 +395,8 @@ macbook - 1440px
     padding: 50px 100px;
 }
 
+
+
 /*
 .work__tile is the container - width and height are fixed
 .work__tile-inner hold the image - will expand on hover
@@ -406,7 +408,19 @@ macbook - 1440px
     height: 30vw;
     overflow: hidden;
     cursor: pointer;
+    margin-top: -80px;
+    opacity: 0;
     position: relative;
+    
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+}
+
+.work__tile.post-scroll {
+    margin-top: 0px;
+    opacity: 1
 }
 
 .work__tile-large {
